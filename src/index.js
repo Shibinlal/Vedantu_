@@ -2,11 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import rootReducer from './reducers/rootReducer';
+import { createStore, applyMiddleware } from "redux";
+import thunk from 'redux-thunk';
+import { Provider } from "react-redux";
 
-document.title = "Shibn_Inthad"
+document.title = "Shibn_Inthad";
+
+const store = createStore(rootReducer, applyMiddleware(thunk))
 ReactDOM.render(
-	<React.Fragment>
+	<Provider store={store}>
 		<App />
-	</React.Fragment>,
+	</Provider>,
 	document.getElementById("root")
 );

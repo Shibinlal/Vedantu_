@@ -1,0 +1,63 @@
+.profile-pic {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.title .title__main {
+  font-size: 26px;
+  line-height: 1.25;
+  display: block;
+}
+
+.title__sub {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666;
+  display: block;
+}
+
+.user-bio .user-bio__text {
+  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .user-bio .user-bio__text {
+    font-size: 16px;
+  }
+}
+.follow-form {
+  display: flex;
+  flex-direction: row;
+}
+.follow-form .follow-form__btn {
+}
+
+.follow-form .follow-form__dropdown {
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.bio-desc {
+  display: block;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+.bio__count .link-grey {
+  color: #586069;
+  font-size: 14px;
+}
+.bio__address .bio__address__item {
+  color: #24292e;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
